@@ -49,6 +49,18 @@ import {
         "Prototype_Level.glb",
         this.scene
       );
+      // const {meshes} = await SceneLoader.ImportMeshAsync(
+      //   "",
+      //   "https://cors-anywhere.herokuapp.com/https://github.com/Babylon-Projects/Babylon_101/blob/6494a554cc2ed97872fc93809b230545135fbc6b/public/models/",
+      //   "Prototype_Level.glb",
+      //   this.scene
+      // );
+      // const {meshes} = await SceneLoader.ImportMeshAsync(
+      //   "",
+      //   "https://cors-anywhere.herokuapp.com/https://github.com/Babylon-Projects/Babylon_101/blob/10_First_Person_Controller/public/models/",
+      //   "Prototype_Level.glb",
+      //   this.scene
+      // );
   
       meshes.map((mesh) => {
         mesh.checkCollisions = true;
