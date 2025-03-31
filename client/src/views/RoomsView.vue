@@ -1,16 +1,16 @@
 <template>
     <div>
         <h1>Rooms View</h1>
-        <!-- <div>
+        <div>
             <ul v-for="entry in rooms" :key="entry.name">
                 <li><RouterLink :to="`/room/${entry.name}`">Room {{entry.name}} - {{entry.schedule}}</RouterLink></li>
             </ul>
-        </div> -->
-        <div>
+        </div>
+        <!-- <div>
             <ul v-for="entry in rooms" :key="entry.name">
                 <li><RouterLink to="/room">Room {{entry.name}} - {{entry.schedule}}</RouterLink></li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </template>
 

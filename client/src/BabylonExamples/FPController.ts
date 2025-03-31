@@ -1,9 +1,10 @@
 import {
     Scene,
     Engine,
-    SceneLoader,
+  //  SceneLoader,
     Vector3,
     HemisphericLight,
+    ImportMeshAsync,
     FreeCamera,
   } from "@babylonjs/core";
   import "@babylonjs/loaders";
@@ -43,24 +44,22 @@ import {
     }
   
     async CreateEnvironment(): Promise<void> {
-      const { meshes } = await SceneLoader.ImportMeshAsync(
-        "",
-        "./models/",
-        "Prototype_Level.glb",
-        this.scene
-      );
+      // const { meshes } = await SceneLoader.ImportMeshAsync(
+      //   "",
+      //   "./models/",
+      //   "Prototype_Level.glb",
+      //   this.scene
+      // );
       // const {meshes} = await SceneLoader.ImportMeshAsync(
       //   "",
       //   "https://cors-anywhere.herokuapp.com/https://github.com/Babylon-Projects/Babylon_101/blob/6494a554cc2ed97872fc93809b230545135fbc6b/public/models/",
       //   "Prototype_Level.glb",
       //   this.scene
       // );
-      // const {meshes} = await SceneLoader.ImportMeshAsync(
-      //   "",
-      //   "https://cors-anywhere.herokuapp.com/https://github.com/Babylon-Projects/Babylon_101/blob/10_First_Person_Controller/public/models/",
-      //   "Prototype_Level.glb",
-      //   this.scene
-      // );
+      const {meshes} = await ImportMeshAsync(
+        " https://raw.githubusercontent.com/occiandiaali/blindate-dot-com/main/client/public/models/Prototype_Level.glb",
+        this.scene
+      );
   
       meshes.map((mesh) => {
         mesh.checkCollisions = true;
