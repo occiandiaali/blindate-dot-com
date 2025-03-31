@@ -1,8 +1,7 @@
 <template>
-    <main>
-        <p>FP Controller</p>
-        <canvas></canvas>
-    </main>
+  <div id="canvas-wrapper">
+    <canvas></canvas>
+  </div>
 </template>
 
 <script lang="ts">
@@ -21,12 +20,15 @@ import { FirstPersonController } from '../BabylonExamples/FPController';
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;700&display=swap");
 
-main {
+#canvas-wrapper {
   width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("/images/Background_Dots.png");
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 
@@ -78,7 +80,7 @@ p {
 }
 
 canvas {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   border: none;
   outline: none;
