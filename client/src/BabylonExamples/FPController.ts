@@ -56,8 +56,12 @@ import {
       //   "Prototype_Level.glb",
       //   this.scene
       // );
+      // const {meshes} = await ImportMeshAsync(
+      //   " https://raw.githubusercontent.com/occiandiaali/blindate-dot-com/main/client/public/models/Prototype_Level.glb",
+      //   this.scene
+      // );
       const {meshes} = await ImportMeshAsync(
-        " https://raw.githubusercontent.com/occiandiaali/blindate-dot-com/main/client/public/models/Prototype_Level.glb",
+        " https://raw.githubusercontent.com/occiandiaali/blindate-dot-com/multi-chat/client/public/models/Street%20environment_V01.gltf",
         this.scene
       );
   
