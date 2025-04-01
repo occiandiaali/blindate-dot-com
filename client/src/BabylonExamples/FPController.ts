@@ -60,14 +60,14 @@ import {
       //   " https://raw.githubusercontent.com/occiandiaali/blindate-dot-com/main/client/public/models/Prototype_Level.glb",
       //   this.scene
       // );
-      // const {meshes} = await ImportMeshAsync(
-      //   "https://raw.githubusercontent.com/occiandiaali/blindate-dot-com/multi-chat/client/public/models/tropical_resort_lobby.glb",
-      //   this.scene
-      // );
       const {meshes} = await ImportMeshAsync(
-        "https://raw.githubusercontent.com/occiandiaali/blindate-dot-com/multi-chat/client/public/models/outdoor.glb",
+        "https://raw.githubusercontent.com/occiandiaali/blindate-dot-com/multi-chat/client/public/models/tropical_resort_lobby.glb",
         this.scene
       );
+      // const {meshes} = await ImportMeshAsync(
+      //   "https://raw.githubusercontent.com/occiandiaali/blindate-dot-com/multi-chat/client/public/models/outdoor.glb",
+      //   this.scene
+      // );
   
       meshes.map((mesh) => {
         mesh.checkCollisions = true;
